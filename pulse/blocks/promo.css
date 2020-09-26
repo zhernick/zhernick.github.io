@@ -1,5 +1,5 @@
 .promo {
-    min-height: 650px;
+    min-height: 675px;
     padding: 21px 0px 93px;
     background: url(../img/bg1.jpg) center center/cover no-repeat;
 }
@@ -74,7 +74,7 @@
     }
     .promo__header{
         font-size: 35px;
-        margin-bottom: 5px;
+        margin-bottom: 15px;
     }
 }
 
