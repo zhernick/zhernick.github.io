@@ -1,0 +1,428 @@
+@media(max-width: 1200px){
+    .menu_item{
+        padding-right: 24px;
+    }
+    .promo_title{
+        font-size: 50px;
+    }
+    .pd:nth-child(even){
+        padding-left: 15px;
+    }
+    .mobile_item{
+        width: 280px;
+        height: 260px;
+    }
+    .mobile_title{
+        font-size: 20px;
+        width: 250px;
+    }
+
+    .car{
+        width: 615px;
+    }
+    .world{
+        height: 650px;
+    }
+
+    .footer_app img{
+        width: 250px;
+    }
+    .footer_middle{
+        margin-left: 80px;
+    }
+    
+}
+
+@media(max-width: 991px){
+    .menu_item{
+        padding-right: 10px;
+    }
+    .menu_link{
+        font-size: 13px;
+    }
+    .phone{
+        font-size: 20px;
+    }
+    .subheader_btn{
+        width: 150px;
+    }
+    .promo_title{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    .promo_subtitle{
+        font-size: 30px;
+    }
+    .reasons_item{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 30px;
+    }
+    .reasons_descr-block{
+        width: 100%;
+        text-align: center;
+    }
+    .reasons_img{
+        margin: 0px 0px 20px;
+    }
+    
+    .mobile_item{
+        width: 320px;
+        height: 280px;
+    }
+    .mobile_title{
+        font-size: 24;
+        width: 276px;
+    }
+    .label_subtitle,
+    .label_subtitlew{
+        font-size: 14px;
+    }
+    .car{
+        width: 575px;
+    }
+    .choise{
+        height: 675px;
+    }
+    .choise_black{
+        height: 425px;
+    }
+    .choise_white{
+        height: 250px;
+        top: 425px;
+    }
+    .world{
+        height: 600px;
+    }
+    .footer_content{
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .footer_middle {
+        width: 450px;
+        order: -1;
+        margin: 0;
+    }
+
+    .footer_media{
+        width: 520px;
+        justify-content: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer_app{
+        text-align: center;
+        width: 700px;
+        padding: 0;
+    }
+
+    .footer_menu{
+        margin-bottom: 45px;
+    }
+
+    .footer{
+        padding: 30px 0px 20px;
+    }
+
+    .lang{
+        position: absolute;
+        top: 110px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+@media(max-width: 767px){
+    nav{
+        height: 46px;
+        position: fixed;
+        width: 100%;
+        z-index: 20;
+    }
+    .menu{
+        position: fixed;
+        top: 0;
+        right: -100%;
+        flex-direction: column;
+        width: 50%;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,0.85);
+        z-index: 5;
+        transition: 0.5s all;  
+    }
+    .menu_active{
+        right: 0;
+    }
+    .menu_item{
+        text-align: center;
+        padding: 0px 15px;
+        width: 100%;
+        border: none;
+    }
+    .menu_link{
+        padding: 10px 0px;
+        font-size: 20px;
+        display: block;
+    }
+    .menu_link:hover{
+        text-decoration: none;
+        background: #fff;
+        color: #000;
+        font-weight: 500;
+        border-radius: 2px;
+    }
+    .hamburger{
+        display: block;
+        z-index: 10;
+    }
+    .hamburger span{
+        width: 100%;
+        height: 2px;
+        margin-bottom: 10px;
+        display: block;
+        background-color: #fff;
+        transition: 0.5s all; 
+    }
+    .hamburger_active span:nth-child(1){
+        transform: rotate(-45deg);
+        margin-top: 12px;
+        margin-bottom: -2px;
+    }
+    .hamburger_active span:nth-child(2){
+        display: none;
+    }
+    .hamburger_active span:nth-child(3){
+        transform: rotate(45deg);
+        margin-bottom: 0px;
+    }
+    .xs-hiden{
+        display: none;
+    }
+    .xs-visible{
+        display: block;
+        margin: 0;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+    }
+    .logo{
+        width: 100%;
+        margin-top: 20px;
+    }
+    .logo_text{
+        display: none;
+    }
+    .subheader{
+        top: 46px;
+    }
+    .subheader_btn{
+        height: 35px;
+        width: 180px;
+        display: block;
+        margin: 0 auto 10px;
+    }
+    .promo{
+        padding-top: 190px;
+        height: 840px;
+    }
+
+    .promo_title{
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .mobile .label_title{
+        font-size: 30px;
+        margin-bottom: 40px;
+    }
+    .label_black{
+        margin-bottom: 30px;
+    }
+
+    .label_title{
+        padding: 0px 29px;
+    }
+
+    .reasons_descr-block{
+        text-align: center;
+    }
+    .label_subtitle{
+        display: none;
+    }
+    .label_subtitlew{
+        margin-bottom: 35px;
+        font-size: 14px;
+    }
+    .mobile_item{
+        margin: 0 auto 20px;
+    }
+    .mobile_title{
+        font-size: 24px;
+    }
+    .car{
+        width: 510px;
+    }
+    .choise{
+        height: 650px;
+    }
+    .choise_black{
+        height: 400px;
+    }
+    .choise_white{
+        height: 250px;
+        top: 400px;
+    }
+    .world{
+        height: 550px;
+    }
+    .main,
+    .etc{
+        position: static;
+    }
+}
+
+@media(max-width: 575px){
+    .logo{
+        margin-top: 20px;
+        margin-left: 15px;
+    }
+    .menu{
+        width: 100%;
+    }
+    .xs-visible{
+        font-size: 13px;
+    }
+    .subheader_btn {
+        font-size: 11px;
+        width: 115px;
+        height: 30px;
+    }
+    .promo{
+        height: 650px;
+    }
+    .promo_title{
+        font-size: 40px;
+        margin-bottom: 20px;
+    }
+    .promo_subtitle{
+        margin-bottom: 80px;
+    }
+    .promo_text{
+        display: none;
+    }
+    .reasons{
+        padding: 30px 0px 0px;
+    }
+    .label_black{
+        margin-bottom: 15px;
+        width: 100px;
+        padding: 5px 0px;
+        font-size: 10px;
+    }
+    .label_white{
+        margin-bottom: 20px;
+        width: 100px;
+        padding: 5px 0px;
+        font-size: 10px;
+    }
+    .label_title{
+        padding: 0px 5px;
+        font-size: 20px;
+    }
+    .label_titlew{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .label_subtitlew{
+        display: none;
+    }
+    .mobile_item{
+        width: 260px;
+        height: 220px;
+    }
+    .mobile_title{
+        padding-top: 60px;
+        font-size: 20px;
+        width: 250px;
+    }
+    .choise{
+        padding-top: 40px;
+        height: 370px;
+    }
+    .choise_black{
+        height: 230px;
+    }
+    .choise_white{
+        height: 140px;
+        top: 230px;
+    }
+    .car{
+        width: 250px;
+    }
+    .car_text{
+        font-size: 12px;
+        width: 250px;
+    }
+    .terms{
+        padding: 40px 0px 30px;
+    }
+    .terms_titleb,
+    .terms_titler{
+        font-size: 18px;
+    }
+    .terms_itemb,
+    .terms_itemr{
+        font-size: 12px;
+    }
+
+    .terms_menu{
+        padding-left: 20px;
+    }
+    .terms_bottom{
+        font-size: 12px;
+    }
+    .terms_itemb:after,
+    .terms_itemr:after{
+        display: none;
+    }
+    .terms_sec{
+        margin-bottom: 20px;
+    }
+    .world{
+        padding: 30px 0px 30px;
+        height: 450px;
+    }
+    .all_towns{
+        font-size: 10px;
+        padding: 10px;
+        bottom: 30px;
+    }
+    .footer_middle{
+        width: 270px;
+    }
+
+    .footer_menu{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: space-between;
+        padding: 0px 10px;
+    }
+
+    .main a {
+        font-size: 12px;
+    }
+
+    .lang{
+        top: 135px;
+    }
+
+    footer:after {
+        width: 280px;
+        top: 25px;
+    }
+
+    
+}
