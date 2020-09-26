@@ -1,5 +1,5 @@
 .promo {
-    min-height: 675px;
+    min-height: 680px;
     padding: 21px 0px 93px;
     background: url(../img/bg1.jpg) center center/cover no-repeat;
 }
@@ -83,6 +83,6 @@
         display: none;
     }
     .promo__wrapper{
-        margin-top: 140px;
+        margin-top: 160px;
     }
 }
