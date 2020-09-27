@@ -1,31 +1,84 @@
-.carousel{
+.carousel {
     padding: 80px 0px;
 }
 
-.carousel__inner{
+.carousel__inner {
     width: 750px;
     margin: 0 auto;
     position: relative;
+    outline: none;
 }
 
-.carousel__inner .slick-prev img{
+.carousel__inner div {
+    display: flex;
+    align-items: center;
+}
+
+.carousel__inner div img {
+    width: 100%;
+    height: 100%;
+}
+
+.slick-list {
+}
+
+.carousel__inner .slick-prev img,
+.carousel__inner .slick-next img {
     width: 30px;
     height: 50px;
 }
 
-.carousel__inner .slick-prev{
+.carousel__inner .slick-prev {
     background-color: #fff;
     border: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     left: -66px;
+    cursor: pointer;
+    outline: none;
 }
-.carousel__inner .slick-next{
+.carousel__inner .slick-next {
     background-color: #fff;
     border: 0;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
     right: -66px;
+    cursor: pointer;
+    outline: none;
+}
+
+@media (max-width: 767px) {
+    .carousel__inner {
+        width: 530px;
+    }
+}
+
+@media (max-width: 575px) {
+    .carousel__inner {
+        width: 350px;
+    }
+    .carousel__inner .slick-prev {
+        left: -50px;
+    }
+    .carousel__inner .slick-next {
+        right: -50px;
+    }
+    .carousel__inner .slick-prev img,
+    .carousel__inner .slick-next img {
+        width: 20px;
+        height: 40px;
+    }
+}
+
+@media(max-width: 440px){
+    .carousel__inner {
+        width: 270px;
+    }
+    .carousel__inner .slick-prev img,
+    .carousel__inner .slick-next img {
+        width: 20px;
+        height: 40px;
+    }
 }

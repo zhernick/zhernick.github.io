@@ -5,6 +5,12 @@ $(document).ready(function(){
         speed: 500,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/right.svg"></button>',
-
+        responsive: [
+            {
+              breakpoint: 440,
+              settings: {
+                arrows: false,
+              }
+            }]
     });
   });
