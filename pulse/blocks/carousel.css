@@ -19,9 +19,6 @@
     height: 100%;
 }
 
-.slick-list {
-}
-
 .carousel__inner .slick-prev img,
 .carousel__inner .slick-next img {
     width: 30px;
@@ -74,11 +71,17 @@
 
 @media(max-width: 440px){
     .carousel__inner {
-        width: 270px;
+        width: 330px;
     }
     .carousel__inner .slick-prev img,
     .carousel__inner .slick-next img {
         width: 20px;
         height: 40px;
+    }
+}
+
+@media(max-width: 360px){
+    .carousel__inner {
+        width: 270px;
     }
 }
