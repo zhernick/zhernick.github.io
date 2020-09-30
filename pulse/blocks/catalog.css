@@ -56,6 +56,7 @@
 .catalog-item {
     width: 300px;
     min-height: 440px;
+    height: 100%;
     border: 2px solid #e8e8e8;
     padding: 20px 20px 26px;
     text-align: center;
@@ -141,8 +142,9 @@
 .catalog-item__content {
     width: 50%;
     margin-right: 00px;
-    transform: translateX(-100%);
+    transform: translateX(-107%);
     transition: 0.3s all;
+    flex: 1;
 }
 
 .catalog-item__content_active {
@@ -189,4 +191,13 @@
 .catalog-item__list_active {
     transform: translateX(-100%);
     margin-left: 0px;
+}
+
+@media(max-width: 991px){
+    .catalog__content_active{
+        justify-content: center;
+    }
+    .catalog-item{
+        margin: 0px 10px 20px;
+    }
 }
