@@ -16,13 +16,19 @@
 
 @media(max-width: 991px){
     .container{
-        width: 750px;
+        width: 850px;
+    }
+}
+
+@media(max-width: 920px){
+    .container{
+        width: 700px;
     }
 }
 
 @media(max-width: 767px){
     .container{
-        width: 560px;
+        width: 550px;
     }
 }
 

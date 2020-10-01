@@ -5,11 +5,13 @@ $(document).ready(function(){
         speed: 500,
         prevArrow: '<button type="button" class="slick-prev"><img src="img/left.svg"></button>',
         nextArrow: '<button type="button" class="slick-next"><img src="img/right.svg"></button>',
+        dots: false,
         responsive: [
             {
-              breakpoint: 440,
+              breakpoint: 768,
               settings: {
                 arrows: false,
+                dots: true
               }
             }
         ]
@@ -37,3 +39,5 @@ $(document).ready(function(){
         })
     });
   });
+
+

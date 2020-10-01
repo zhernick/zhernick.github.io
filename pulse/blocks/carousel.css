@@ -46,6 +46,32 @@
     outline: none;
 }
 
+.slick-dots{
+    display: flex;
+    justify-content: center;
+}
+
+.slick-dots li button{
+    color: transparent;
+    background-color: #fff;
+    border: 2px solid black;
+    width: 50px;
+    height: 8px;
+    margin: 0px 5px;
+    transition: 0.3s all;
+    
+}
+
+.slick-dots li.slick-active button{
+    background-color: #000;
+}
+
+@media(max-width: 920px){
+    .carousel__inner{
+        width: 600px;
+    }
+}
+
 @media (max-width: 767px) {
     .carousel__inner {
         width: 530px;
@@ -71,12 +97,11 @@
 
 @media(max-width: 440px){
     .carousel__inner {
-        width: 330px;
+        width: 310px;
     }
-    .carousel__inner .slick-prev img,
-    .carousel__inner .slick-next img {
-        width: 20px;
-        height: 40px;
+    .slick-dots li button{
+        width: 30px;
+        height: 6px;
     }
 }
 
