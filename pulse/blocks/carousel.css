@@ -49,6 +49,7 @@
 .slick-dots{
     display: flex;
     justify-content: center;
+    align-items: flex-end;
 }
 
 .slick-dots li button{
