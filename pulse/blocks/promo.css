@@ -18,6 +18,7 @@
     text-transform: uppercase;
     margin: 0;
     line-height: 42px;
+    margin-bottom: 5px;
 }
 
 .promo__subheader {
@@ -65,6 +66,12 @@
 @media(max-width: 991px){
     .promo__wrapper{
         align-items: center;
+    }
+}
+
+@media(max-width: 767px){
+    .promo__header{
+        font-size: 36px;
     }
 }
 

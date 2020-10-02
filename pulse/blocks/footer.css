@@ -126,14 +126,15 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        border-bottom: 1px solid #fff;
         cursor: pointer;
+        border-bottom: 1px solid rgba(255,255,255,0.6);
     }
 
     .hamburger__content{
         width: 100%;
         padding: 10px;
         background-color: rgba(0,0,0,0.5);
+
     }
     .hamburger span{
         width: 100%;
@@ -162,6 +163,6 @@
     .hamburger__content_active span:nth-child(3){
         margin-top: -2px;
         transform: rotate(45deg);
-        
+
     }
 }
