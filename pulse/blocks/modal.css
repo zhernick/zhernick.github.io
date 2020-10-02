@@ -100,17 +100,16 @@ label.error{
 
 @media(max-width: 400px){
     .modal{
-        padding: 20px 20px 0px;
+        padding: 20px 20px 30px;
         min-height: 380px;
         left: 47%;
     }
     .modal__subtitle {
         font-size: 14px;
-
     }
     .modal__descr {
         font-size: 11px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
     .modal__close{
         padding-bottom: 1px;

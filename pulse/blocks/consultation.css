@@ -37,6 +37,7 @@
 @media(max-width: 430px){
     .consultation__description {
         font-size: 15px;
+        margin-bottom: 10px;
     }
     .consultation{
         padding: 170px 0px 50px;
