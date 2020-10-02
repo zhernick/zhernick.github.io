@@ -1,6 +1,6 @@
 .consultation {
-    height: 680px;
-    padding: 100px 0px 92px;
+    min-height: 680px;
+    padding: 100px 0px 0px;
     background: url(../img/bg2.jpg) center center/cover no-repeat;
 }
 
@@ -9,6 +9,17 @@
     font-size: 20px;
     font-weight: 500;
     margin-bottom: 35px;
+}
+
+
+.consultation label.error{
+    text-align: center;
+    color: #fff;
+    border: none;
+}
+
+#consultation-form{
+    padding-bottom: 120px;
 }
 
 @media(max-width: 991px){
