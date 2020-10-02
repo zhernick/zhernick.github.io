@@ -162,5 +162,6 @@
     .hamburger__content_active span:nth-child(3){
         margin-top: -2px;
         transform: rotate(45deg);
+        
     }
 }
