@@ -59,7 +59,6 @@
 
 @media(max-width: 576px){
     .modal__close {
-        padding-top: 2px;
         position: absolute;
         top: -50px;
         right: 0px;
