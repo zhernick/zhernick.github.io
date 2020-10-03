@@ -97,7 +97,24 @@ $(document).ready(function () {
   validateForms('#order form');
   validateForms('#consultation form');
 
+  $('input[name=phone]').mask("+9 (999) 999-99-99");
 
+  $('form').submit(function(e){        //обращаюсь ко всем формам
+      e.preventDefault();   //отключение перезагрузки страницы
+    $.ajax({
+      type: "POST",      //указываю я буду получать или отдавать данные с сервера(post - отдавать)
+      url: "mailer/phpmailer/smart.php",    //какой обработчик будет обрабатывать всю операцию
+      data: $(this).serialize()   //те данные которые я хочу отправить на сервер, т.е. те данные которые указаны в функции (отправляю формы) (this)
+    }).done(function(){
+      $(this).find('input').val('');
+      $('#consultation, #order').fadeOut();
+      $('.overlay, #thanks').fadeIn();
+
+
+      $('form').trigger('reset');
+    });
+    return false;
+  });
 
 });
 
