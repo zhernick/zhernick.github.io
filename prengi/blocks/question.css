@@ -1,0 +1,117 @@
+.question {
+    padding: 79px 0px 81px;
+}
+
+.question__item-top,
+.question__item-bottom {
+    width: 360px;
+    height: 255px;
+    border: 1px solid #ececec;
+    position: relative;
+}
+
+.question__img-top,
+.question__img-bottom {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+}
+
+.question__text-top,
+.question__text-bottom {
+    text-align: center;
+    width: 234px;
+    margin: 175px auto 0px;
+    color: #393939;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.question__text-bottom {
+    width: 264px;
+    font-weight: 700;
+}
+
+.question__corner__img-top,
+.question__corner__img-bottom {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.arrow-bottom {
+    margin: 50px auto 33px;
+    display: block;
+}
+
+.question__title {
+    margin-bottom: 35px;
+    text-align: center;
+    color: #393939;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 29px;
+    text-transform: uppercase;
+}
+
+@media(max-width: 1200px){
+    .question__item-top,
+    .question__item-bottom {
+        width: 300px;
+    }
+}
+
+@media(max-width: 991px){
+    .question__item-top,
+    .question__item-bottom {
+        width: 210px;
+    }
+    .question__text-top,
+    .question__text-bottom{
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .question__text-top{
+        width: 200px;
+    }
+    .question__text-bottom{
+        width: 185px;
+    }
+}
+
+@media(max-width: 767px){
+    .question__item-top,
+    .question__item-bottom {
+        width: 360px;
+        margin: 0 auto 20px;
+    }
+    .question__text-top,
+    .question__text-bottom{
+        font-size: 18px;
+        width: 240px;
+    }
+    .question__title{
+        font-size: 40px;
+    }
+}
+
+@media(max-width: 575px){
+    .question__item-top,
+    .question__item-bottom {
+        width: 270px;
+    }
+    .question__text-top,
+    .question__text-bottom{
+        font-size: 14px;
+        width: 185px;
+    }
+    .question {
+        padding: 60px 0px 60px;
+    }
+}

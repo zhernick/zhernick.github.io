@@ -1,0 +1,228 @@
+.data {
+    position: relative;
+    height: 580px;
+}
+
+.data__title {
+    content: "";
+    position: absolute;
+    top: 79px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    line-height: 35.99px;
+    width: 380px;
+    text-align: center;
+    z-index: 2;
+}
+
+.data__wrapper {
+    display: flex;
+    width: 100%;
+}
+
+.data__left,
+.data__right {
+    width: 50%;
+    position: relative;
+    z-index: 1;
+}
+
+.data__left:after,
+.data__right:after {
+    content: "";
+    position: absolute;
+    width: 167px;
+    height: 167px;
+    top: 232px;
+    background-color: rgba(0, 194, 240, 0.3);
+    z-index: -1;
+}
+
+.data__left:after {
+    right: 43px;
+}
+
+.data__right:after {
+    left: 43px;
+}
+
+.data__left {
+    background: url(../img/wault.png) center center/cover no-repeat;
+    height: 580px;
+    padding: 270px 82px 50px;
+    text-align: right;
+}
+
+.data__right {
+    background: url(../img/wault2.png) center center/cover no-repeat;
+    height: 580px;
+    padding: 270px 50px 0px 82px;
+    text-align: left;
+}
+
+.data__left-title,
+.data__right-title {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    line-height: 32px;
+}
+
+.data__left-descr,
+.data__right-descr {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+    width: 485px;
+}
+
+.data__left-descr {
+    margin-left: auto;
+}
+
+@media (max-width: 1200px) {
+    .data__left-title,
+    .data__right-title {
+        font-size: 27px;
+        margin-bottom: 15px;
+    }
+    .data__left-descr,
+    .data__right-descr {
+        color: #ffffff;
+        font-size: 15px;
+        width: 320px;
+    }
+    .data__left:after,
+    .data__right:after {
+        width: 140px;
+        height: 140px;
+        top: 250px;
+    }
+
+    .data__left:after {
+        right: 35px;
+    }
+
+    .data__right:after {
+        left: 35px;
+    }
+}
+
+@media(max-width: 991px){
+    .data__left{
+        padding-right: 50px;
+        padding-left: 30px;
+    }
+    .data__right{
+        padding-left: 50px;
+        padding-right: 30px;
+    }
+    .data__left-title,
+    .data__right-title {
+        font-size: 20px;
+        margin-bottom: 15px;
+        width: 100%;
+        line-height: 17px;
+    }
+    .data__left-descr,
+    .data__right-descr {
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 300;
+        line-height: 20px;
+        width: 100%;
+    }
+    .data__left:after {
+        right: 30px;
+    }
+
+    .data__right:after {
+        left: 30px;
+    }
+}
+
+@media(max-width: 767px){
+    .data__left{
+        padding-right: 30px;
+        padding-left: 10px;
+    }
+    .data__right{
+        padding-left: 30px;
+        padding-right: 10px;
+    }
+    .data__left-title,
+    .data__right-title {
+        font-size: 18px;
+        margin-bottom: 10px;
+        width: 100%;
+        line-height: 22px;
+    }
+    .data__left-descr,
+    .data__right-descr {
+        color: #ffffff;
+        font-size: 13px;
+        font-weight: 300;
+        line-height: 20px;
+        width: 100%;
+    }
+    .data__left:after,
+    .data__right:after {
+        width: 140px;
+        height: 140px;
+        top: 245px;
+    }
+
+    .data__left:after {
+        right: 20px;
+    }
+
+    .data__right:after {
+        left: 20px;
+    }
+    .data__title {
+        font-size: 20px;
+        line-height: 22px;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+@media(max-width: 576px){
+    .data__left{
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+    .data__right{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .data__left-descr,
+    .data__right-descr {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .data__left:after,
+    .data__right:after {
+        display: none;
+    }
+}
+
+@media(max-width: 523px){
+    .data__left-title,
+    .data__right-title {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 522px){
+    .data__left-title,
+    .data__right-title {
+        font-size: 17px;
+    }
+}
