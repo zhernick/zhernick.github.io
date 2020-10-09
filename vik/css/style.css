@@ -304,6 +304,7 @@ nav {
     background: url(../img/season-bg.jpg) center center/cover no-repeat;
     height: 900px;
     position: relative;
+    height: 100vh;
 }
 
 .logo-mini {
