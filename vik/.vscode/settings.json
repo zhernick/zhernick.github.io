@@ -1,0 +1,37 @@
+{
+    "launch": {
+
+
+
+        "configurations": [],
+        "compounds": []
+    },
+    "workbench.colorCustomizations": {
+        
+        "editor.foreground": "#808080f8",
+        "sideBar.foreground": "#777777",
+        "editor.background": "#080808",
+        "statusBar.background": "#000",
+        "statusBar.foreground": "#77D4CB",
+        "scrollbarSlider.activeBackground": "#77D4CB",
+        "tab.activeForeground": "#fff",
+        "titleBar.activeBackground": "#000",
+        "activityBarBadge.background": "#77D4CB",
+        "editorCursor.foreground": "#fff",
+        "editorLineNumber.foreground": "#ffffff7e",
+        "scrollbarSlider.background": "#1f1f1ff1",
+        "menubar.selectionForeground": "#fff",
+        "menu.selectionBackground": "#00aeff60",
+        "titleBar.activeForeground": "#808080",
+        "tab.hoverForeground": "#d3d3d3",
+        "menu.selectionForeground": "#fff",
+        "foreground": "#9c9a9a",
+        },
+        "editor.tokenColorCustomizations": {
+            "functions": "#77D4CB",
+            "strings": "#C3DB61", //цвет строк
+            "variables": "#77D4CB", //цвет переменных 
+        },
+
+        
+}
