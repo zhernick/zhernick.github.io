@@ -74,7 +74,7 @@
     height: 100%;
     top: 0;
     left: 0;
-    background: rgba(0,0,0,0.7);
+    background: rgba(0,0,0,0.85);
     z-index: 100;
     display: none;
     
@@ -125,6 +125,11 @@
 @media(max-width: 550px){
     .page__header{
         height: 140vh;
+    }
+    .overlay__cnt{
+        text-align: center;
+        padding: 10px 30px;
+        font-size: 18px;
     }
 }
 
