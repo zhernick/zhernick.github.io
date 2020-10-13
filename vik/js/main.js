@@ -1,5 +1,5 @@
 $(function () {
-    $(".char-slider").slick({
+    $(".slider__item").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
         arrows: true,
@@ -7,12 +7,23 @@ $(function () {
             '<button type="button" class="slick-prev"><img src="img/left.png"></button>',
         nextArrow:
             '<button type="button" class="slick-next"><img src="img/right.png"></button>',
-        asNavFor: ".char__info-slider",
+        asNavFor: ".slider__info",
+        responsive: [
+            {
+              breakpoint: 650,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+              }
+            },
+        ]
     });
-    $(".char__info-slider").slick({
+    $(".slider__info").slick({
         slidesToShow: 1,
         slidesToScroll: 1,
-        asNavFor: ".char-slider",
+        asNavFor: ".slider__item",
         fade: true,
         arrows: false,
     });
@@ -24,13 +35,13 @@ $(function () {
         },
     });
 
-    $(".hide").on("click", function () {
-        $(".overlay, .overlay-text").fadeIn("");
+    $('.hide').on('click', function(){
+        $('.overlay, .overlay__cnt').fadeIn();
     });
 
-    $(".overlay").on("click", function () {
-        $(".overlay").fadeOut("");
-    });
+    $('.overlay').on('click', function(){
+        $('.overlay, .overlay__cnt').fadeOut();
+    })
 
     window.addEventListener("DOMContentLoaded", () => {
         const menu = document.querySelector(".menu"),

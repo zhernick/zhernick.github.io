@@ -10,57 +10,119 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/jquery.fancybox.css">
+    <link rel="stylesheet" href="blocks/header.css">
+    <link rel="stylesheet" href="blocks/about.css">
+    <link rel="stylesheet" href="blocks/trailer.css">
+    <link rel="stylesheet" href="blocks/seasons.css">
+    <link rel="stylesheet" href="blocks/slider.css">
+    <link rel="stylesheet" href="blocks/page2__header.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <header class="season__header">
-        <div class="logo-mini">
-            <a href="index.html"><img src="img/logo-mini.png" alt="logo" class="logo-mini__img"></a>
+    <header class="page__header">
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
         <nav>
-            <ul class="menu seasons__menu">
-                <li class="menu__item">
-                    <a href="s1.html" class="menu__link">1 сезон</a>
-                </li>
-                <li class="menu__item">
-                    <a href="s2.html" class="menu__link">2 сезон</a>
-                </li>
-                <li class="menu__item">
-                    <a href="s3.html" class="menu__link">3 сезон</a>
-                </li>
-                <li class="menu__item">
-                    <a href="s4.html" class="menu__link">4 сезон</a>
-                </li>
-                <li class="menu__item">
-                    <a href="s5.html" class="menu__link">5 сезон</a>
-                </li>
-                <li class="menu__item">
-                    <a href="s6.html" class="menu__link">6 сезон</a>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="seasons__descr">
-            <div class="seasons__number">
-                <span>3</span> cезон
+            <div class="container">
+                <div class="page-logo">
+                    <a href="index.html"><img src="img/logo-mini.png" alt="logo" class="page__logo-img"></a>
+                </div>
+                <ul class="menu">
+                    <li class="menu__item">
+                        <a href="s1.html" class="menu__link">1 сезон</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="s2.html" class="menu__link">2 сезон</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="s3.html" class="menu__link menu__link_active">3 сезон</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="s4.html" class="menu__link">4 сезон</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="s5.html" class="menu__link">5 сезон</a>
+                    </li>
+                    <li class="menu__item">
+                        <a href="s6.html" class="menu__link">6 сезон</a>
+                    </li>
+                </ul>
             </div>
-            <p class="seasons__descr-text test">В разработке</p>
+        </nav>
+        <div class="page__bottom">
+            <div class="page__bottom-num">03 <span>сезон</span> </div>
+            <div class="page__bottom-descr">
+                Сериал знакомит нас с жестоким и таинственным миром Рагнара Лодброка, воина-викинга и фермера, который
+                жаждет исследовать—и совершать набеги-далекие берега океана. Его честолюбие ставит его в противоречие с
+                местным вождем графом Харальдсоном, который настаивает на отправке своих рейдеров на бедный Восток, а не
+                на неизведанный Запад. Когда Рагнар объединяется со своим другом-кораблестроителем Флоки, чтобы создать
+                новое поколение бесстрашных кораблей, способных покорять бурные северные моря, сцена готова к конфликту.
+                <br><br>
 
-                
+                Но несмотря на всю свою войну и кровопролитие, викинги также являются историей семьи и братства,
+                захватывая любовь и привязанность между Рагнаром и его женой Лагертой, свирепой воительницей. Это
+                история о брате Рагнара Ролло, яростном борце, который кипит от ревности; о жене графа Харальдсона
+                Зигги, послушной красавице, которая, возможно, не слишком верна; и о монахе Ательстане, чья христианская
+                мораль противоречит языческому обществу викингов. Когда амбиции и инновации потрясут цивилизацию, эти
+                персонажи будут подвергнуты испытанию—и их образ жизни никогда не будет прежним.
+            </div>
         </div>
     </header>
 
-    <div class="overlay">
-        <div class="overlay-text">
-           Серия пока не доступна
+    <section class="seasons seasons__page">
+        <div class="container_mini">
+           <div class="title">Все серии 3 сезона</div>
+           <ol class="seasons__menu">
+              <li class="seasons__item" id="s1" style="background: url(img/1seria.jpg) center center/cover no-repeat">
+                 <a href="https://youtu.be/YAgvhHVqkXw" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/2seria.jpg)center center/cover no-repeat">
+                 <a href="#" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/3seria.jpg)center center/cover no-repeat">
+                 <a href="#" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/4seria.jpg)center center/cover no-repeat">
+                 <a href="#" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/5seria.jpg)center center/cover no-repeat">
+                 <a href="#" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/6seria.jpg)center center/cover no-repeat">
+                 <a href="#" class="seasons__link">Cмотреть</a>
+              </li>
+              <li class="seasons__item" id="close" style="background: url(img/7seria.jpg)center center/cover no-repeat">
+                <a href="#" class="seasons__link">Cмотреть</a>
+             </li>
+             <li class="seasons__item" id="close" style="background: url(img/8seria.jpg)center center/cover no-repeat">
+                <a href="#" class="seasons__link">Cмотреть</a>
+             </li>
+             <li class="seasons__item" id="close" style="background: url(img/9seria.jpg)center center/cover no-repeat">
+                <a href="#" class="seasons__link">Cмотреть</a>
+             </li>
+           </ol>
         </div>
-     </div>
+     </section>
+
+     <footer class="overlay">
+         <div class="overlay__cnt">
+             Серия пока не доступна
+         </div>
+     </footer>
+
+
+
 
 
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>

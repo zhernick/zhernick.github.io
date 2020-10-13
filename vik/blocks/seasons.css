@@ -1,0 +1,79 @@
+.seasons__page {
+    padding: 100px 0px 50px;
+    position: relative;
+    background-color: #000;
+    z-index: 0;
+}
+
+.seasons__menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    counter-reset: counter;
+}
+
+.seasons__item {
+    position: relative;
+    width: 30%;
+    height: 250px;
+    margin: 0px 0px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seasons__item:hover::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+}
+
+.seasons__item:hover .seasons__link{
+    display: block;
+}
+
+.seasons__item::after {
+    content: "0" counter(counter);
+    counter-increment: counter;
+    position: absolute;
+    color: #600e09;
+    font-size: 96px;
+    font-weight: 700;
+    top: -70px;
+    left: 0;
+    z-index: -1;
+}
+
+.seasons__item:nth-child(n+10)::after {
+    content: "" counter(counter);
+} 
+
+.seasons__link {
+    font-size: 36px;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: normal;
+    line-height: normal;
+    text-align: center;
+    padding: 12px 60px;
+    background-color: #000;
+    display: none;
+    transition: 0.3s all;
+    z-index: 2; 
+}
+
+@media(max-width: 800px){
+    .seasons__item{
+        width: 45%;
+    }
+}
+
+@media(max-width: 600px){
+    .seasons__item{
+        width: 100%;
+    }
+}
