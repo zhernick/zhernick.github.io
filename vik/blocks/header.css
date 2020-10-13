@@ -96,7 +96,7 @@
 
 @media(max-width: 850px){
     .menu{
-        top: -105%;
+        top: -110%;
         left: 0;
         position: fixed;
         flex-direction: column;
