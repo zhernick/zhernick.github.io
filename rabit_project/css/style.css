@@ -16,7 +16,7 @@ input:focus {
 
 body{
   height: 100vh;
-  background: url(../img/fon.jpg)center/cover no-repeat;
+  background: url(../img/fon.jpg)center center/cover no-repeat;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -25,6 +25,7 @@ body{
 }
 
 .btn{
+  z-index: 100;
   position: relative;
   font-size: 20px;
   display: inline-block;
@@ -55,7 +56,7 @@ body{
   bottom: -520px;
   transition: 0.5s all;
   animation-delay: 2s;
-  animation: 5s anim infinite alternate;
+  animation: 1s anim infinite alternate;
 }
 
 .rabit_active{
@@ -69,7 +70,7 @@ body{
 
 @keyframes anim{
   0%{
-    left: 0%;
+    left: -20%;
   }
   100%{
     left: 65%;
@@ -80,4 +81,34 @@ body{
   0%{
     left: 0%;
   }
+}
+
+
+@media(max-width: 400px){
+  body{
+    max-height: 700px;
+  }
+  .rabit img{
+    width: 280px;
+  }
+  @keyframes anim{
+    0%{
+      left: 0%;
+    }
+    100%{
+      left: 20%;
+    }
+    0%{
+      left: 0%;
+    }
+  }
+  .rabit{
+    bottom: -250px;
+
+  }
+  
+  .rabit_active{
+    bottom: -0px;
+  }
+
 }

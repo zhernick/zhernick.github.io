@@ -5,5 +5,4 @@ let rabbit = document.querySelector('.rabit');
 
 btn.addEventListener('click', function(){
     rabbit.classList.toggle('rabit_active');
-    rabbit.style.toggle('animation-play-state: paused');
 })
