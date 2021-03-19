@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: sans-serif;
+  color: #000;
+  line-height: 1;
+}
+
+button:focus,
+input:focus {
+  outline: none;
+}
+
+body{
+  height: 100vh;
+  background: url(../img/fon.jpg)center/cover no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.btn{
+  position: relative;
+  font-size: 20px;
+  display: inline-block;
+  width: 10em;
+  height: 4em;
+  line-height: 2.5em;
+  vertical-align: middle;
+  text-align: center;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #777;
+  color: #fff;
+  outline: none;
+  border: 2px solid #F64C2B;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 0 60px rgba(0,0,0,0) inset, .1em .1em .2em #800;
+  background: linear-gradient(#FB9575, #F45A38 48%, #EA1502 52%, #F02F17);
+}
+
+.btn:active{
+  top: .1em;
+  left: .1em;
+  box-shadow: 0 0 0 60px rgba(0,0,0,.05) inset;
+}
+
+.rabit{
+  position: absolute;
+  bottom: -520px;
+  transition: 0.5s all;
+  animation-delay: 2s;
+  animation: 5s anim infinite alternate;
+}
+
+.rabit_active{
+  bottom: -100px;
+  animation-play-state: paused;
+}
+
+.rabit img{
+  width: 500px;
+}
+
+@keyframes anim{
+  0%{
+    left: 0%;
+  }
+  100%{
+    left: 65%;
+  }
+  50%{
+    left: 30%;
+  }
+  0%{
+    left: 0%;
+  }
+}
