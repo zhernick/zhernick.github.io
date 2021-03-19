@@ -103,12 +103,12 @@ body{
     }
   }
   .rabit{
-    bottom: -250px;
+    bottom: -305px;
 
   }
   
   .rabit_active{
-    bottom: -0px;
+    bottom: -60px;
   }
 
 }
