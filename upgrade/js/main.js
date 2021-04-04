@@ -16,6 +16,8 @@ upgrade.addEventListener('click', (e) => {
         weaponEnchant.classList.add(`ench${count}`);
         if(count == 5){
             button.value = 'max';
+            upgrade.style.cssText = 'color: rgb(71, 71, 71); border-color: rgb(71, 71, 71); cursor: none;';
+            upgrade.disabled = true;
             count--;
         }
     } 

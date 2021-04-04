@@ -30,7 +30,7 @@ body{
   padding: 10px;
   border-radius: 5px;
   border:2px solid red;
-  background: #000;
+  background: rgba(0, 0, 0, 0.514);
   color: red;
   font-size: 20px;
   cursor: pointer;
