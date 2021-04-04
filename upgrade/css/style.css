@@ -65,8 +65,8 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 50%;
-  transform: rotateX(-50%);
+  left: 49%;
+  transform: translateX(-50%);
   bottom: 0;
   background-color: transparent;
   z-index: 1;
@@ -78,8 +78,8 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 47%;
-  transform: rotateX(-50%);
+  left: 49%;
+  transform: translateX(-50%);
   bottom: 0;
   background-color: transparent;
   box-shadow: 0px 0px 25px 8px rgb(154, 212, 226);
@@ -92,8 +92,8 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 47%;
-  transform: rotateX(-50%);
+  left: 49%;
+  transform: translateX(-50%);
   bottom: 0;
   background-color: transparent;
   box-shadow: 0px 0px 30px 11px rgb(154, 212, 226);
@@ -106,8 +106,8 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 47%;
-  transform: rotateX(-50%);
+  left: 49%;
+  transform: translateX(-50%);
   bottom: 0;
   background-color: transparent;
   box-shadow: 0px 0px 35px 15px rgb(121, 154, 245);
@@ -120,8 +120,8 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 47%;
-  transform: rotateX(-50%);
+  left: 49%;
+  transform: translateX(-50%);
   bottom: 0;
   background-color: transparent;
   box-shadow: 0px 0px 45px 20px rgb(52, 102, 240);
@@ -134,7 +134,7 @@ body{
   position: absolute;
   width: 0px;
   height: 73%;
-  left: 47%;
+  left: 49%;
   transform: rotateX(-50%);
   bottom: 0;
   background-color: transparent;
