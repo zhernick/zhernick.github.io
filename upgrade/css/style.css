@@ -38,8 +38,7 @@ body{
 }
 
 #upgrade{
-  margin-top: 60px;
-  padding: 30px 40px;
+  padding: 20px 30px;
 }
 
 .block{
@@ -50,7 +49,7 @@ body{
 }
 
 .cyka{
-  width: 100px;
+  width: 70px;
   position: relative;
   z-index: 1000;
 }
