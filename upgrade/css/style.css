@@ -15,16 +15,50 @@ input:focus {
 }
 
 body{
+  position: relative;
   display: flex;
-  background: rgba(0, 0, 0, 0.863);
+  /* background: rgba(0, 0, 0, 0.863); */
+  background: url(../img/фон.jpg)center center/cover no-repeat;
   height: 100vh;
   width: 100%;
   justify-content: center;
   align-items: center;
 }
 
+body:after{
+  position: absolute;
+  content: '';
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.603);
+z-index: 0.1;
+}
+
 #button,
 #upgrade{
+  min-width: 55px;
+  min-height: 50px;
+  padding: 10px;
+  border-radius: 5px;
+  border:2px solid #fff;
+  background: rgba(0, 0, 0, 0.514);
+  color: red;
+  font-size: 20px;
+  cursor: pointer;
+  margin: 40px
+}
+
+#upgrade{
+  padding: 10px 20px;
+  margin: 40px 10px 0px 0px;
+  border:2px solid rgb(84, 201, 84);
+  color: rgb(84, 201, 84);
+  margin: 40px 10px 0px 0px;
+}
+
+#reset{
   min-width: 55px;
   min-height: 50px;
   padding: 10px;
@@ -34,11 +68,6 @@ body{
   color: red;
   font-size: 20px;
   cursor: pointer;
-  margin: 40px;
-}
-
-#upgrade{
-  padding: 10px 20px;
 }
 
 .block{
@@ -46,20 +75,51 @@ body{
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  visibility: hidden;
+  position: relative;
+  z-index: 2;
 }
 
-.cyka{
+.cyka, .cyka2, .cyka3, .cyka4{ 
   width: 70px;
   position: relative;
   z-index: 1000;
 }
 
-.img_block, .ench1, .ench2, .ench3, .ench4, .ench5{
+.cyka4{
+  width: 140px;
+}
+
+
+.img_sword, .sw1, .sw2, .sw3, .sw4, .sw5{
   position: relative;
   z-index: 100;
 }
 
-.img_block:before{
+.img_bow, .bw1, .bw2, .bw3, .bw4, .bw5{
+  position: relative;
+  z-index: 100;
+}
+
+.img_staff, .sf1, .sf2, .sf3, .sf4, .sf5{
+  position: relative;
+  z-index: 100;
+}
+
+.img_chesnok, .ch1, .ch2, .ch3, .ch4, .ch5{
+  position: relative;
+  z-index: 100;
+}
+
+
+.img_sword, .img_staff, .img_bow, .img_chesnok{
+  display: none;
+  height: 335px;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_sword:before{
   display: block;
   content: '';
   position: absolute;
@@ -72,7 +132,102 @@ body{
   z-index: 1;
 }
 
-.ench1:before{
+.img_chesnok:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  bottom: 93px;
+  background: transparent;
+  border-radius: 80px;
+  z-index: -1;
+}
+
+.ch1:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  border-radius: 10px 10px 10px 10px;
+  bottom: 93px;
+  border-radius: 80px;
+  background-color: transparent;
+  box-shadow: 0px 0px 25px 8px rgb(154, 212, 226);
+  z-index: 1;
+}
+
+.ch2:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  border-radius: 10px 10px 10px 10px;
+  bottom: 93px;
+  border-radius: 80px;
+  background-color: transparent;
+  box-shadow: 0px 0px 30px 11px rgb(154, 212, 226);
+  z-index: 1;
+}
+
+.ch3:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  border-radius: 10px 10px 10px 10px;
+  bottom: 93px;
+  border-radius: 80px;
+  background-color: transparent;
+  box-shadow: 0px 0px 35px 15px rgb(121, 154, 245);
+  z-index: 1;
+}
+
+.ch4:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  border-radius: 10px 10px 10px 10px;
+  bottom: 93px;
+  border-radius: 80px;
+  background-color: transparent;
+  box-shadow: 0px 0px 45px 20px rgb(52, 102, 240);
+  z-index: 1;
+}
+
+.ch5:before{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 133px;
+  height: 110px;
+  left: 51%;
+  transform: translateX(-50%) rotate(-33deg);
+  border-radius: 10px 10px 10px 10px;
+  bottom: 93px;
+  border-radius: 80px;
+  background-color: transparent;
+  box-shadow: 0px 0px 50px 25px rgb(247, 16, 54);
+  z-index: 1;
+}
+
+
+.sw1:before{
   display: block;
   content: '';
   position: absolute;
@@ -86,7 +241,7 @@ body{
   z-index: 1;
 }
 
-.ench2:before{
+.sw2:before{
   display: block;
   content: '';
   position: absolute;
@@ -100,7 +255,7 @@ body{
   z-index: 1;
 }
 
-.ench3:before{
+.sw3:before{
   display: block;
   content: '';
   position: absolute;
@@ -114,7 +269,7 @@ body{
   z-index: 1;
 }
 
-.ench4:before{
+.sw4:before{
   display: block;
   content: '';
   position: absolute;
@@ -128,7 +283,7 @@ body{
   z-index: 1;
 }
 
-.ench5:before{
+.sw5:before{
   display: block;
   content: '';
   position: absolute;
@@ -141,4 +296,129 @@ body{
   box-shadow: 0px 0px 50px 25px rgb(247, 16, 54);
   z-index: 1;
 }
+
+.d__block{
+  max-width: 300px;
+  width: 100%;
+  height: 100%;
+  max-height: 600px;
+  animation: d_block 2s forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+.d__none{
+  display: none;
+}
+
+@keyframes d_block{
+  0%{
+    visibility: visible;
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+
+.main__screen{
+  z-index: 2;
+  text-align: center;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.main__title{
+  font-size: 50px;
+  color: red;
+}
+
+.main__title{
+  margin-bottom: 20px;
+  font-size: 45px;
+}
+
+
+
+
+.weaponBtn{
+  padding: 20px 40px;
+  font-size: 23px;
+  border: 1px solid grey;
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  border-radius: 5px;
+  min-width: 350px;
+  margin: 1px 0px;
+  font-weight: bold;
+}
+
+.active{
+  background-color: #000;
+  color: #fff;
+}
+
+.small{
+  left: 15%;
+  transition: 1.5s all;
+}
+
+.small .main__title{
+  font-size: 20px;
+  margin-bottom: 10px;
+  animation: main1 1.5s forwards;
+}
+
+.small .weaponBtn{
+  min-width: 100px;
+  padding: 10px 10px;
+  font-size: 15px;
+  animation: main2 1.5s forwards;
+}
+
+@keyframes main {
+  0%{
+    left: 50%;
+  }
+  100%{
+    left: 15%;
+  }
+}
+
+@keyframes main1{
+  0%{
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  100%{
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+}
+
+@keyframes main2{
+  0%{
+    padding: 20px 40px;
+    font-size: 23px;
+    min-width: 350px;
+  }
+  100%{
+    min-width: 100px;
+    padding: 10px 10px;
+    font-size: 15px;
+  }
+}
+
+.dis{
+  background-color: rgb(32, 32, 32);
+  color: rgb(54, 54, 54);
+  cursor: none;
+}
+
 
