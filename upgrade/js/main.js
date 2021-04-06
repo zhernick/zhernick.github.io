@@ -12,6 +12,7 @@ let enchantBow = document.querySelector('.img_bow');
 let enchantStaff = document.querySelector('.img_staff');
 let weaponBtn = document.querySelectorAll('.main__menu li button');
 let main = document.querySelector('.main__screen');
+let menu = document.querySelector('.main__menu');
 let reset = document.querySelector('#reset');
 let sword = document.querySelector('.img_sword');
 let staff = document.querySelector('.img_staff');
@@ -24,6 +25,9 @@ weaponBtn.forEach((item, i) => {
         hide();
         removeImg();
         item.classList.add('active');
+        if (e.currentTarget.classList.contains('dis')) {
+            e.target.removeEventListener();
+        }
         if (e.currentTarget.classList.contains('active')) {
             main.classList.add('small');
             main.style.cssText = 'animation: main 2s forward;';
@@ -32,7 +36,7 @@ weaponBtn.forEach((item, i) => {
                 sword.style.display = 'flex';
             } else if (item.innerHTML == 'Staff') {
                 staff.style.display = 'flex';
-            } else if (item.innerHTML == 'Bow') {
+            } else if (item.innerHTML == 'Axe') {
                 bow.style.display = 'flex';
             } else if (item.innerHTML == 'Chesnok') {
                 chesnok.style.display = 'flex';
@@ -55,6 +59,10 @@ upgrade.addEventListener('click', (e) => {
                 enchantChesnok.classList.add(`ch${count}`);
             } else if (item.innerHTML == 'Sword') {
                 enchantSword.classList.add(`sw${count}`);
+            } else if (item.innerHTML == 'Staff') {
+                enchantStaff.classList.add(`st${count}`);
+            } else if (item.innerHTML == 'Axe') {
+                enchantBow.classList.add(`bw${count}`);
             }
         });
         if (count == 5) {
@@ -66,17 +74,17 @@ upgrade.addEventListener('click', (e) => {
     }
 });
 
-    reset.addEventListener('click', (e) => {
-        e.preventDefault();
-        count = 0;
-        button.value = `+${count}`;
-        enchantSword.classList.remove('sw1', 'sw2', 'sw3', 'sw4', 'sw5');
-        enchantBow.classList.remove('bw1', 'bw2', 'bw3', 'bw4', 'bw5');
-        enchantStaff.classList.remove('st1', 'st2', 'st3', 'st4', 'st5');
-        enchantChesnok.classList.remove('ch1', 'ch2', 'ch3', 'ch4', 'ch5');
-        upgrade.disabled = false;
-        upgrade.style.cssText = 'color: rgb(84, 201, 84); border-color: rgb(84, 201, 84); cursor: pointer;';
-    })
+reset.addEventListener('click', (e) => {
+    e.preventDefault();
+    count = 0;
+    button.value = `+${count}`;
+    enchantSword.classList.remove('sw1', 'sw2', 'sw3', 'sw4', 'sw5');
+    enchantBow.classList.remove('bw1', 'bw2', 'bw3', 'bw4', 'bw5');
+    enchantStaff.classList.remove('st1', 'st2', 'st3', 'st4', 'st5');
+    enchantChesnok.classList.remove('ch1', 'ch2', 'ch3', 'ch4', 'ch5');
+    upgrade.disabled = false;
+    upgrade.style.cssText = 'color: rgb(84, 201, 84); border-color: rgb(84, 201, 84); cursor: pointer;';
+})
 
 function hide() {
     weaponBtn.forEach(item => {
@@ -93,14 +101,32 @@ function removeImg() {
             enchantBow.classList.remove('bw1', 'bw2', 'bw3', 'bw4', 'bw5');
             enchantStaff.classList.remove('st1', 'st2', 'st3', 'st4', 'st5');
             enchantChesnok.classList.remove('ch1', 'ch2', 'ch3', 'ch4', 'ch5');
+            upgrade.disabled = false;
+            upgrade.style.cssText = 'color: rgb(84, 201, 84); border-color: rgb(84, 201, 84); cursor: pointer;';
             if (item.innerHTML == 'Sword') {
                 console.log(item.innerHTML);
                 enchantChesnok.style.display = 'none';
+                enchantBow.style.display = 'none';
+                enchantStaff.style.display = 'none';
                 enchantSword.style.display = 'flex';
             } else if (item.innerHTML == 'Chesnok') {
                 console.log(item.innerHTML);
                 enchantSword.style.display = 'none';
+                enchantBow.style.display = 'none';
+                enchantStaff.style.display = 'none';
                 enchantChesnok.style.display = 'flex';
+            } else if (item.innerHTML == 'Axe') {
+                console.log(item.innerHTML);
+                enchantSword.style.display = 'none';
+                enchantChesnok.style.display = 'none';
+                enchantStaff.style.display = 'none';
+                enchantBow.style.display = 'flex';
+            } else if (item.innerHTML == 'Staff') {
+                console.log(item.innerHTML);
+                enchantSword.style.display = 'none';
+                enchantBow.style.display = 'none';
+                enchantChesnok.style.display = 'none';
+                enchantStaff.style.display = 'flex';
             }
         })
     })
